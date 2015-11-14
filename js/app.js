@@ -24,8 +24,8 @@ $( document ).ready(function() {
   })
   .mouseup(function() {
     // ryu goes back to his ready position
-    $('.ryu.throwing').hide();
-    $('.ryu.ready').show();
+    $('.ryu-throwing').hide();
+    $('.ryu-ready').show();
   });
 });
 
