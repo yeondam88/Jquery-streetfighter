@@ -1,0 +1,114 @@
+/*------------------------------------------
+GENERAL
+------------------------------------------*/
+
+body {
+        margin: 0;
+        padding: 0;
+}
+
+ul li {
+        list-style-type: none;
+}
+
+hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 50%;
+}
+
+/*------------------------------------------
+HEADER
+------------------------------------------*/
+
+header div.project-name h1 {
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 0;
+        margin-bottom: 6px;
+        text-align: left;
+        padding: 25px 80px;
+        background-color: #cb4e4e;
+        box-shadow: 0 6px #ab3c3c;
+        color: #fff;
+}
+
+/*------------------------------------------
+SECTION
+------------------------------------------*/
+
+.main-container {
+        background-color: #e8e8e8;
+        padding-left: 100px;
+        min-width: 1200px;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+}
+
+/*------------------------------------------
+RYU
+------------------------------------------*/
+
+.ryu {
+        width: 659px;
+        height: 494px;
+}
+
+.ryu-still, .ryu-ready, .ryu-throwing {
+        width: 659px;
+        height: 494px;
+}
+
+.ryu-ready, .ryu-throwing {
+        display: none;
+}
+
+.ryu-ready {
+        background-image: url("../images/ryu-ready-position.gif");
+}
+
+.ryu-still {
+        background-image: url("../images/ryu-standing-still.png");
+}
+
+.ryu-throwing {
+        background-image: url("../images/ryu-throwing-hadouken.png");
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
+        background-repeat: no-repeat;
+}
+
+/*------------------------------------------
+HADOUGEN
+------------------------------------------*/
+
+.hadouken {
+        background-image: url("../images/hadouken.gif");
+        width: 156px;
+        height: 90px;
+        display: none;
+        float: left;
+        position: absolute;
+        top: 167px;
+        left: 520px;
+        z-index: 10;
+}
+
+/*------------------------------------------
+FOOTER
+------------------------------------------*/
+
+footer div.footer p {
+        text-align: center;
+}
+
+footer div.footer ul {
+        text-align: center;
+}
+
+footer div.footer li {
+        text-align: center;
+        display: inline-block;
+        padding: 20px;
+}
