@@ -101,6 +101,10 @@ FOOTER
 
 footer div.footer p {
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        color: #cb4e4e;
+        /*text-shadow: 0.5px 0.5px 0px #ab3c3c;*/
 }
 
 footer div.footer ul {
@@ -111,4 +115,18 @@ footer div.footer li {
         text-align: center;
         display: inline-block;
         padding: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+}
+
+footer ul.social li a {
+        text-decoration: none;
+        color: #cb4e4e;
+        /*text-shadow: 0.5px 0.5px 0px #ab3c3c;*/
+}
+
+footer ul.social li a:hover {
+        text-decoration: none;
+        color: #ee8989;
+        /*text-shadow: 0.5px 0.5px 0px #f0c5c5;*/
 }
