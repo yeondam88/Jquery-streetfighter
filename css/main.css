@@ -21,16 +21,39 @@ hr {
 HEADER
 ------------------------------------------*/
 
-header div.project-name h1 {
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 0;
-        margin-bottom: 6px;
-        text-align: left;
-        padding: 25px 80px;
+header div.project-name {
+        width: 100%;
+        display: inline-block;
         background-color: #cb4e4e;
         box-shadow: 0 6px #ab3c3c;
+        margin-bottom: 6px;
+}
+
+header div.project-name h1 {
+        font-family: 'Montserrat', sans-serif;
+        float: left;
+        padding: 25px 80px;
         color: #fff;
 }
+
+header div.project-name p.how-to-1,
+header div.project-name p.how-to-2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align: right;
+        padding-right: 20px;
+        color: #fff;
+        display: inline-block;
+        float: right;
+        position: absolute;
+        margin-top: 50px;
+}
+
+.key {
+  font-weight: bold;
+  color: #e9b339;
+}
+
 
 /*------------------------------------------
 SECTION
@@ -45,6 +68,8 @@ SECTION
         z-index: 1;
 }
 
+
+
 /*------------------------------------------
 RYU
 ------------------------------------------*/
@@ -54,12 +79,9 @@ RYU
         height: 494px;
 }
 
-.ryu-still, .ryu-ready, .ryu-throwing {
+.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool {
         width: 659px;
         height: 494px;
-}
-
-.ryu-ready, .ryu-throwing {
         display: none;
 }
 

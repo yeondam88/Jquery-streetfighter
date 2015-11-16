@@ -3,17 +3,20 @@ STREETFIGHTER EVENTS
 ------------------------------------------*/
 
 $( document ).ready(function() {
+  $('.ryu-action').hide(); //(this line means hide all 4 divs)
+  $('.ryu-still').show();
+
   $('.ryu').mouseenter(function() {
-    $('.ryu-still').hide();
+    $('.ryu-action').hide();
     $('.ryu-ready').show();
   })
   .mouseleave(function() {
-    $('.ryu-ready').hide();
+    $('.ryu-action').hide();
     $('.ryu-still').show();
   })
   .mousedown(function() {
     playHadouken();
-    $('.ryu-ready').hide();
+    $('.ryu-action').hide();
     $('.ryu-throwing').show();
     $('.hadouken').finish().show()
       .animate(
@@ -28,9 +31,26 @@ $( document ).ready(function() {
   })
   .mouseup(function() {
     // ryu goes back to his ready position
-    $('.ryu-throwing').hide();
-    $('.ryu-ready').show();
+    $('.ryu-action').hide();
+    $('.ryu-still').show();
   });
+  /*on key press
+			—> keydown —> display ryu-cool (and hide everythying else)*/
+				$(document).keydown(function(key) {
+					// console.log(key);
+				    if (key.keyCode == 88) {
+				      $('.ryu-action').hide(); //(this line means hide all 4 divs)
+				      $('.ryu-cool').show();
+				    }
+				  });
+
+		/*	—> keyup —> display the default state --> ryu-still (and hide everythying else)*/
+				$(document).keyup(function(key) {
+				    if (key.keyCode == 88) {
+				      $('.ryu-action').hide(); //(this line means hide all 4 divs)
+				      $('.ryu-still').show();
+				    }
+				  });
 });
 
 
